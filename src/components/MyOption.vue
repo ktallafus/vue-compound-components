@@ -1,5 +1,7 @@
 <template>
-  <button @click="emitValue(props.value)" style="color: red;">
+  <button 
+    @click="emitValue(props.value) /* emitValue from <Select>, not <Option> */" 
+    style="color: red;">
     I'm an option {{ currentValue === value ? 'active' : '' }}
   </button>
 </template>

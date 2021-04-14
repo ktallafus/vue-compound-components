@@ -11,6 +11,8 @@ import { defineProps, defineEmit, provide, computed } from 'vue'
 const props = defineProps(['modelValue'])
 const emit = defineEmit(['update:modelValue'])
 
+//this will be made availabale (provided) to child Options
+//this means that child Options will be able to emit their value on behalf of Select
 const emitValue = (value) => {
   emit('update:modelValue', value)
 }

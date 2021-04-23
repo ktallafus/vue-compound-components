@@ -8,7 +8,9 @@
   <MyDropdownOption value="hello"/>
 </MyDropdown>
 ```
-Go to [the components folder](https://github.com/3nuc/vue-compound-components/tree/master/src) to see the code
+In this repository, there are examples for:
+* [dropdown](https://github.com/3nuc/vue-compound-components/blob/master/example-dropdown/Example.vue)
+* [table](https://github.com/3nuc/vue-compound-components/blob/master/example-table/Example.vue)
 
 The above are called Compound Components (see [Kent Dodds's original React article](https://kentcdodds.com/blog/compound-components-with-react-hooks) about them)
 

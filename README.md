@@ -2,7 +2,7 @@
 
 Vue equivalent of React compound components.
 
-Go to https://github.com/3nuc/vue-compound-components/tree/master/src/components to see the code
+Go to https://github.com/3nuc/vue-compound-components/tree/master/src/ then to example-* folders see the code
 
 React compound components described here: https://kentcdodds.com/blog/compound-components-with-react-hooks
 

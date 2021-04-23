@@ -1,8 +1,10 @@
 <template>
-   currentValue: {{modelValue}}
+<span>
+  currentValue: {{modelValue}}
   <div style="display: flex; flex-direction: column; width: 200px;">
     <slot/>
   </div>
+</span>
 </template>
 
 <script setup>

@@ -6,23 +6,11 @@
   </MySelect>
 </template>
 
-<script>
+<script setup>
+import { ref } from 'vue'
 import MySelect from './MySelect.vue'
 import MyOption from './MyOption.vue'
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  },
-  components: {
-    MyOption,
-    MySelect
-  },
-  data() {
-    return {
-      count: 0,
-      selectValue: '1'
-    }
-  }
-}
+
+const selectValue = ref('1')
+
 </script>

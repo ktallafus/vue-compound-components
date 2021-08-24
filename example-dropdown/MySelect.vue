@@ -8,10 +8,10 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmit, provide, computed } from 'vue'
+import { defineProps, defineEmits, provide, computed } from 'vue'
 
 const props = defineProps(['modelValue'])
-const emit = defineEmit(['update:modelValue'])
+const emit = defineEmits(['update:modelValue'])
 
 //this will be made availabale (provided) to child Options
 //this means that child Options will be able to emit their value on behalf of Select

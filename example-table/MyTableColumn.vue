@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted,onBeforeUnmount,inject, defineProps, h, render, useContext} from 'vue'
+import {onBeforeUnmount, inject, defineProps, getCurrentInstance} from 'vue'
 
 const props = defineProps({
   itemPropertyName: {
@@ -12,7 +12,7 @@ const props = defineProps({
   }
 })
 const { registerChild, unregisterChild } = inject('TheParent');
-const ctx = useContext();
+const instance = getCurrentInstance();
 
 const childInfo = {
   itemPropertyName: props.itemPropertyName,
@@ -21,7 +21,7 @@ const childInfo = {
   // since ctx.slots.default is a render fn,
   // we pass slot content from here to the parent component
   // then render it in the parent using <component :is=""/>
-  content: ctx.slots.default
+  content: instance.slots.default
 }
 
 registerChild(childInfo);

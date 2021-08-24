@@ -1,6 +1,7 @@
 <script setup>
 import ExampleDropdown from './example-dropdown/Example.vue'
 import ExampleTable from './example-table/Example.vue'
+import ExampleCarousel from './example-carousel/Example.vue'
 </script>
 
 <template>
@@ -14,6 +15,11 @@ import ExampleTable from './example-table/Example.vue'
   <section>
     <h2>Compound table</h2>
     <ExampleTable/>
+  </section>
+
+  <section>
+    <h2>Compound carousel</h2>
+    <ExampleCarousel/>
   </section>
 
 </div>

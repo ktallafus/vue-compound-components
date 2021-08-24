@@ -1,5 +1,5 @@
 <script setup>
-import {onBeforeUnmount, inject, defineProps, getCurrentInstance} from 'vue'
+import {onBeforeUnmount, inject, getCurrentInstance} from 'vue'
 
 const props = defineProps({
   itemPropertyName: {

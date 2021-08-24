@@ -8,7 +8,7 @@
 </template>
 
 <script setup>
-import { defineProps, defineEmits, provide, computed } from 'vue'
+import { defineEmits, provide, computed } from 'vue'
 
 const props = defineProps(['modelValue'])
 const emit = defineEmits(['update:modelValue'])

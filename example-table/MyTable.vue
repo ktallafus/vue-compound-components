@@ -1,5 +1,5 @@
 <script setup>
-import {ref, provide, defineProps } from 'vue'
+import {ref, provide } from 'vue'
 
 const props = defineProps({
   items: {
